@@ -1,4 +1,4 @@
-#说明
+# 说明
 
   日常工作实践、学习整理。目前使用PHP7.4（后续可能会不断更新）,语法糖一般不做旧版本的兼容。除了用到PHP官方PSR规范、Laravel约定以外，
   还会引进其他语言、框架以及业界一些较为流行或认可的方案和设计规范。
@@ -71,7 +71,7 @@
 为了方便查阅，以下就Laravel创作者泰勒·奥特威尔的一些观点进行了整理。
 
 
-####关于MVC
+#### 关于MVC
 
 > I really think the acronym "MVC" has become incredibly unhelpful in development, and instead we should just teach "separation of concerns".
 > -Taylor Otwell
@@ -113,7 +113,7 @@ Laravel VS Symfony VS Ruby on rails VS Spring
 [laravel-best-practices(中文)](https://github.com/alexeymezenin/laravel-best-practices/blob/master/chinese.md)
 
 
-####关于lumen
+#### 关于lumen
 
 1、除非项目一开始只做API，除非项目永远不会变大变复杂。否则不推荐使用lumen。
 2、使用完整版的Laravel吧，否则后续你还会把缺失的功能一项项加回去，开发体验也不好。
