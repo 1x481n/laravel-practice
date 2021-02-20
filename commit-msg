@@ -1,0 +1,14 @@
+#!/bin/sh
+# shellcheck disable=SC2006
+MSG=$(awk '{printf("%s",$0)}' "$1")
+# shellcheck disable=SC2039
+if [[ "$MSG" =~ ^(feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert):' '.{4,50}$ ]]; then
+  exit 0
+else
+  echo "-------------------------------------------------------------------"
+  echo "commit message 格式不符合规范"
+  echo "正确的格式: <类型>: <主题>,其中类型只能是下面7种的其中一种,主题4-50个字符,与冒号之间带空格:"
+  echo "feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert"
+  echo "-------------------------------------------------------------------"
+  exit 1
+fi
