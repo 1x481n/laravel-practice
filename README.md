@@ -18,7 +18,7 @@
 
 ## 更新日志
 
-- [什么是更新日志](https://keepachangelog.com/zh-CN/0.3.0/)
+- <a href="https://keepachangelog.com/zh-CN/0.3.0/" target="_blank">什么是更新日志</a>
 
 - [CHANGELOG](./CHANGELOG.md)
 
@@ -27,30 +27,29 @@
 
 ### laravel-ddd-example
 
-[domain-driven-design-ddd-principles-with-laravel](https://content-garden.com/domain-driven-design-ddd-principles-with-laravel)
-
-[Laravel Models folder: To Be or Not To Be](https://laraveldaily.com/laravel-models-folder-not/)
-
  DDD(领域驱动设计)在laravel项目中的实践示例
+
+- <a href="https://content-garden.com/domain-driven-design-ddd-principles-with-laravel" target="_blank">domain-driven-design-ddd-principles-with-laravel</a>
+
+- <a href="https://laraveldaily.com/laravel-models-folder-not/" target="_blank">Laravel Models folder: To Be or Not To Be</a>
+
 
  初始化构建：
 
 -  通过 Composer 创建项目
 
 ```bash
-    //安装全局compoer,略
-    composer create-project --prefer-dist laravel/laravel laravel-ddd-example
+# 安装全局compoer,略
+composer create-project --prefer-dist laravel/laravel laravel-ddd-example
 ```
 
 -  通过 Laravel 安装器 
 
 ```bash
-    //可选，如果之前已安装存在网络超时等问题，先卸载旧版本
-    composer global remove laravel/installer
- 
-    composer global require laravel/installer
-
-    laravel new laravel-ddd-example
+# 可选，如果之前已安装存在网络超时等问题，先卸载旧版本
+composer global remove laravel/installer
+composer global require laravel/installer
+laravel new laravel-ddd-example
 ```
     
 ###  扩展
@@ -80,20 +79,20 @@
 > -Taylor Otwell
 
 
-![](./Taylor Otwell MVC0.png)
+![](./Taylor%20Otwell%20MVC0.png)
 
-![](./Taylor Otwell MVC1.jpeg)
+![](./Taylor%20Otwell%20MVC1.jpeg)
 
-![](./Taylor Otwell MVC2.png)
+![](./Taylor%20Otwell%20MVC2.png)
 
 
-twitter原文:
+Twitter出处:
 
-[Is Laravel a MVC framework?](https://twitter.com/Sileence/status/634390267966173184)
+<a href="https://twitter.com/Sileence/status/634390267966173184" target="_blank">Is Laravel a MVC framework?</a>
 
-[MVC has become incredibly unhelpful in development](https://twitter.com/taylorotwell/status/262290285499936768)
+<a href="https://twitter.com/taylorotwell/status/262290285499936768" target="_blank">MVC has become incredibly unhelpful in development</a>
 
-[I think limiting yourself to “MVC” as a pattern is not good](https://twitter.com/taylorotwell/status/1204882498230116353)
+<a href="https://twitter.com/taylorotwell/status/1204882498230116353" target="_blank">I think limiting yourself to “MVC” as a pattern is not good</a>
 
 
 <p id="from-apprentice-to-artisan">最后建议通读 Taylor Otwell 的电子书 《From Apprentice To Artisan》</p>
@@ -103,28 +102,30 @@ twitter原文:
 
 ---
 
-Laravel VS Symfony VS Ruby on rails VS Spring  
-
-[Debate: Symfony VS Laravel](https://dev.to/itsmukulmishra/debate-symfony-vs-laravel-1bh9)
-
-[Taylor Otwell: “Thin” Controllers, “Fat” Models Approach](https://laraveldaily.com/taylor-otwell-thin-controllers-fat-models-approach/)
-  
-
-[laravel-best-practices(中文)](https://github.com/alexeymezenin/laravel-best-practices/blob/master/chinese.md)
-
-
 #### 关于lumen
 
-1、除非项目一开始只做API，除非项目永远不会变大变复杂。否则不推荐使用lumen。
-2、使用完整版的Laravel吧，否则后续你还会把缺失的功能一项项加回去，开发体验也不好。
-3、项目初期，很微小的性能差异，起步了决定作用。项目做大后的性能问题，不是框架本身能解决的。
-4、选择lumen更多的是心里因素，觉得他快。实际效益一般。
+1. 除非项目一开始只做API，除非项目永远不会变大变复杂。否则不推荐使用lumen。
+2. 使用完整版的Laravel，否则后续你还会把缺失的功能一项项加回去，开发体验也不好。
+3. 项目初期，很微小的性能差异，起不了决定性作用。项目做大后的性能问题，不是框架本身能解决的。
+4. 选择lumen更多的是心里因素，觉得它更快。实际效益一般。
 
-Laravel和Lumen的创作者自己也是建议直接用Laravel。以下列举他和一些开发者讨论的观点。
+同是Lumen创作者的Taylor Otwell也建议直接用Laravel。以下列举他和一些开发者讨论的观点。
 
-[I think always use Laravel](https://twitter.com/taylorotwell/status/1306287663109091329)
+<a href="https://twitter.com/taylorotwell/status/1306287663109091329" target="_blank">I think always use Laravel</a>
 
-[Is it worth to switch to #Laravel for better developer experience with the downside of a decreased performance?](https://twitter.com/devgummibeer/status/1212731942455717888)
+<a href="https://twitter.com/devgummibeer/status/1212731942455717888" target="_blank">Is it worth to switch to #Laravel for better developer experience with the downside of a decreased performance?</a>
 
-[Most of the time people choose Lumen for psychological reasons not technical reasons](https://twitter.com/taylorotwell/status/1212832185830510592)
+<a href="https://twitter.com/taylorotwell/status/1212832185830510592" target="_blank">Most of the time people choose Lumen for psychological reasons not technical reasons</a>
 
+---
+
+### 其他资料
+
+<a href="https://dev.to/itsmukulmishra/debate-symfony-vs-laravel-1bh9" target="_blank">Debate: Symfony VS Laravel</a>
+
+<a href="https://laraveldaily.com/taylor-otwell-thin-controllers-fat-models-approach/" target="_blank">Taylor Otwell: “Thin” Controllers, “Fat” Models Approach</a>
+  
+<a href="https://github.com/alexeymezenin/laravel-best-practices/blob/master/chinese.md" target="_blank">laravel-best-practices(中文)</a>  
+
+
+Laravel vs Symfony VS Ruby on rails VS Spring?  
