@@ -2,10 +2,42 @@
 
   日常工作实践、学习整理。目前使用PHP7.4（后续可能会不断更新）,语法糖一般不做旧版本的兼容。除了用到PHP官方PSR规范、Laravel约定以外，
   还会引进其他语言、框架以及业界一些较为流行或认可的方案和设计规范。
+  
+## 感悟  
+  
+  有人说PHP越来越Java化，开始迷失了方向。其实不只PHP，诸如Javascript作为前端语言，从ES5便加入了严格模式，来规避弱类型语言不严谨的问题。
+  
+  现今企业的项目日趋复杂，早期弱类型的优点，放到特定的项目领域背景下可能是个灾难。Java这么多年能作为企业级大型应用的首选，就是得益于他的
+  完全的OOP、类型检查、语义明确等规范，由此建立起了可靠的生态。所以各语言要在市场保持竞争力，改变是不可避免的。同样，JAVA在发展中也逐渐
+  意识到自身冗长复杂、欠缺灵活性、开发效率低等缺点，开始接受并借鉴弱类型语言中的各种优点，加入新的特性。
+  甚至业界推出了Scala和Kotlin这种基于JVM平台、对Java改良的语言。
+  
+  所以未来趋势基本是这样的，弱类型语言强类型化，强类型语言弱类型化；动态语言静态化，静态语言动态化。
+  世界总是在不停的变化，我们要学会拥抱变化，不要为了逃避学习而找各种借口。
+  最后，辩证地看待各种技术，学习归学习，追求极致还是不求甚解完全看个人兴趣。一旦投入生产，请记住软件工程中是“没有银弹”的。
+  不要一味去套用流行的技术，在实践中多思考，提出合理质疑、做好取舍，探索出适合的方案。
 
 ## git提交规范
 
 - angular的提交规范
+```
+<type>(<scope>): <subject>
+// 空一行
+<body>
+// 空一行
+<footer>
+```
+
+```
+标题行：50个字符以内，描述主要变更内容
+
+主体内容：更详细的说明文本，建议72个字符以内。 需要描述的信息包括: 
+    - 为什么这个变更是必须的? 它可能是用来修复一个bug，增加一个feature，提升性能、可靠性、稳定性等等
+    - 他如何解决这个问题? 具体描述解决问题的步骤
+    - 是否存在副作用、风险? 
+
+尾部：如果需要的化可以添加一个链接到issue地址或者其它文档，或者关闭某个issue。
+```
 
 - IDEA的git-commit-template插件
 
@@ -119,13 +151,28 @@ Twitter出处:
 
 ---
 
-### 其他资料
+#### 简单对比下Laravel与Symfony、Ruby on rails、Spring
+
+- **Ruby on Rails**
+
+Ruby on rails是优雅的代名词，约定优于配置、ActiveRecord和链式调用（方法链｜Method Chaining｜Fluent interface）的实践开创者。现在流行的其他语言的许多框架都借鉴了ROR的思想。包括Laravel、Spring、Swift On Sails等。（天下语言一大抄😊）
+
+- **Symfony**
+
+Symfony是一组可重用的PHP组件和一个用于Web项目的PHP框架。Laravel框架的构建也是了使用了Symfony的许多组件。（站在巨人肩膀上，不重复造轮子）
+
+- **Spring**
+
+Java最流行的开源框架， 拥有著名的设计思想：IOC容器、依赖注入、AOP等。Laravel吸收了其IOC容器思想 （博采众长）
+
+##### 参考资料
+
+[开源社区很多开源框架都有Rails的影子，为什么不用Rails呢？](https://www.zhihu.com/question/271846592)
+
+[The Rails Doctrine - Rails 信条](https://ruby-china.org/wiki/the-rails-doctrine)
 
 <a href="https://dev.to/itsmukulmishra/debate-symfony-vs-laravel-1bh9" target="_blank">Debate: Symfony VS Laravel</a>
 
 <a href="https://laraveldaily.com/taylor-otwell-thin-controllers-fat-models-approach/" target="_blank">Taylor Otwell: “Thin” Controllers, “Fat” Models Approach</a>
   
 <a href="https://github.com/alexeymezenin/laravel-best-practices/blob/master/chinese.md" target="_blank">laravel-best-practices(中文)</a>  
-
-
-Laravel vs Symfony VS Ruby on rails VS Spring?  
