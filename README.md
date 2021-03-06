@@ -17,36 +17,9 @@
   最后，辩证地看待各种技术，学习归学习，追求极致还是不求甚解完全看个人兴趣。一旦投入生产，请记住软件工程中是“没有银弹”的。
   不要一味去套用流行的技术，在实践中多思考，提出合理质疑、做好取舍，探索出适合的方案。
 
-## git提交规范
+## Git规范
 
-- angular的提交规范
-```
-<type>(<scope>): <subject>
-// 空一行
-<body>
-// 空一行
-<footer>
-```
-
-```
-标题行：50个字符以内，描述主要变更内容
-
-主体内容：更详细的说明文本，建议72个字符以内。 需要描述的信息包括: 
-    - 为什么这个变更是必须的? 它可能是用来修复一个bug，增加一个feature，提升性能、可靠性、稳定性等等
-    - 他如何解决这个问题? 具体描述解决问题的步骤
-    - 是否存在副作用、风险? 
-
-尾部：如果需要的化可以添加一个链接到issue地址或者其它文档，或者关闭某个issue。
-```
-
-- IDEA的git-commit-template插件
-
-- 本地git提交规范检测的钩子脚本：[commit-msg](./commit-msg)
-```
- 1、commit-msg文件放到: 当前工作目录/.git/hooks/下     
- 2、设置commit-msg权限为可执行  执行命令:chmod u+x commit-msg  
- 3、测试不规范的格式提交,提交失败并给出提示。 
-```
+- [Git规范](docs/GIT_SPECIFICATION.md)
 
 ## 更新日志
 
@@ -86,93 +59,11 @@ laravel new laravel-ddd-example
     
 ###  扩展
 
-关于Laravel8，我觉得比较有意思地一点变化是重新引入了Models目录结构。
-从Laravel5开始，被移除的模型目录又回归了。对于社区大部分开发者来说，肯定是令人兴奋的。
-但Laravel作者从始至终并不觉得这是一个好的设计，其本人也在Twitter上承认这是一种妥协。"我个人觉得它是没有必要的，但是社区中的大多数人似乎都喜欢它。"
-如果事先有阅读过作者早期的电子书[《从学徒到工匠》（译）](#from-apprentice-to-artisan)，也能从书中的第5章应用结构中找到原因。
+- [关于Laravel](docs/ABOUT_LARAVEL.md)
 
-> I personally like it's unnecessary but most of the community seems to prefer it.
-> -Taylor Otwell
+- [关于MVC](docs/ABOUT_MVC.md)
 
-![](./Taylor%20Otwell%20Talk%20About%20Models.png)
+- [关于lumen](docs/ABOUT_LUMEN.md)
 
-[Laravel 8.x skeleton will include a "app/Models" directory by default.](https://twitter.com/taylorotwell/status/1296556354593792000)
+- [Laravel与Symfony、Ruby on rails、Spring](docs/COMPARE.md)
 
-对于Models模型文件，早期也是和社区大部分人的意见一致。近两年接触到DDD等设计思想，才渐渐体会到作者的设计意图。
-为了方便查阅，以下就Laravel创作者泰勒·奥特威尔的一些观点进行了整理。
-
-
-#### 关于MVC
-
-> I really think the acronym "MVC" has become incredibly unhelpful in development, and instead we should just teach "separation of concerns".
-> -Taylor Otwell
-
-> But the point is I think limiting yourself to “MVC” as a pattern is not good. I wrote about this in my first ebook back in 2012ish
-> -Taylor Otwell
-
-
-![](./Taylor%20Otwell%20MVC0.png)
-
-![](./Taylor%20Otwell%20MVC1.jpeg)
-
-![](./Taylor%20Otwell%20MVC2.png)
-
-
-Twitter出处:
-
-<a href="https://twitter.com/Sileence/status/634390267966173184" target="_blank">Is Laravel a MVC framework?</a>
-
-<a href="https://twitter.com/taylorotwell/status/262290285499936768" target="_blank">MVC has become incredibly unhelpful in development</a>
-
-<a href="https://twitter.com/taylorotwell/status/1204882498230116353" target="_blank">I think limiting yourself to “MVC” as a pattern is not good</a>
-
-
-<p id="from-apprentice-to-artisan">最后建议通读 Taylor Otwell 的电子书 《From Apprentice To Artisan》</p>
-
-参考地址：[https://learnku.com/articles/6364/laravel-from-apprentice-to-artisan-by-taylor-otwell](https://learnku.com/articles/6364/laravel-from-apprentice-to-artisan-by-taylor-otwell)
-
-
----
-
-#### 关于lumen
-
-1. 除非项目一开始只做API，除非项目永远不会变大变复杂。否则不推荐使用lumen。
-2. 使用完整版的Laravel，否则后续你还会把缺失的功能一项项加回去，开发体验也不好。
-3. 项目初期，很微小的性能差异，起不了决定性作用。项目做大后的性能问题，不是框架本身能解决的。
-4. 选择lumen更多的是心里因素，觉得它更快。实际效益一般。
-
-同是Lumen创作者的Taylor Otwell也建议直接用Laravel。以下列举他和一些开发者讨论的观点。
-
-<a href="https://twitter.com/taylorotwell/status/1306287663109091329" target="_blank">I think always use Laravel</a>
-
-<a href="https://twitter.com/devgummibeer/status/1212731942455717888" target="_blank">Is it worth to switch to #Laravel for better developer experience with the downside of a decreased performance?</a>
-
-<a href="https://twitter.com/taylorotwell/status/1212832185830510592" target="_blank">Most of the time people choose Lumen for psychological reasons not technical reasons</a>
-
----
-
-#### 简单对比下Laravel与Symfony、Ruby on rails、Spring
-
-- **Ruby on Rails**
-
-Ruby on rails是优雅的代名词，约定优于配置、ActiveRecord和链式调用（方法链｜Method Chaining｜Fluent interface）的实践开创者。现在流行的其他语言的许多框架都借鉴了ROR的思想。包括Laravel、Spring、Swift On Sails等。（天下语言一大抄😊）
-
-- **Symfony**
-
-Symfony是一组可重用的PHP组件和一个用于Web项目的PHP框架。Laravel框架的构建也是了使用了Symfony的许多组件。（站在巨人肩膀上，不重复造轮子）
-
-- **Spring**
-
-Java最流行的开源框架， 拥有著名的设计思想：IOC容器、依赖注入、AOP等。Laravel吸收了其IOC容器思想 （博采众长）
-
-##### 参考资料
-
-[开源社区很多开源框架都有Rails的影子，为什么不用Rails呢？](https://www.zhihu.com/question/271846592)
-
-[The Rails Doctrine - Rails 信条](https://ruby-china.org/wiki/the-rails-doctrine)
-
-<a href="https://dev.to/itsmukulmishra/debate-symfony-vs-laravel-1bh9" target="_blank">Debate: Symfony VS Laravel</a>
-
-<a href="https://laraveldaily.com/taylor-otwell-thin-controllers-fat-models-approach/" target="_blank">Taylor Otwell: “Thin” Controllers, “Fat” Models Approach</a>
-  
-<a href="https://github.com/alexeymezenin/laravel-best-practices/blob/master/chinese.md" target="_blank">laravel-best-practices(中文)</a>  
