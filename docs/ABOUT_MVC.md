@@ -1,5 +1,7 @@
 ## 关于MVC
 
+本章节承接关于Laravel章节，旨在引用创建者本人关于MVC的观点，补充说明Laravel的设计意图。
+
 > I really think the acronym "MVC" has become incredibly unhelpful in development, and instead we should just teach "separation of concerns".
 > -Taylor Otwell
 
@@ -22,8 +24,4 @@ Twitter出处:
 
 <a href="https://twitter.com/taylorotwell/status/1204882498230116353" target="_blank">I think limiting yourself to “MVC” as a pattern is not good</a>
 
-
-<p id="from-apprentice-to-artisan">最后建议通读 Taylor Otwell 的电子书 《From Apprentice To Artisan》</p>
-
-参考地址：[https://learnku.com/articles/6364/laravel-from-apprentice-to-artisan-by-taylor-otwell](https://learnku.com/articles/6364/laravel-from-apprentice-to-artisan-by-taylor-otwell)
 
